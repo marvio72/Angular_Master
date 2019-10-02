@@ -55,21 +55,26 @@
     "no-empty": false,
     "no-inferrable-types": [
       true,
-      "ignore-params"
+      "ignore-params",
+      "ignore-properties"
     ],
     "no-non-null-assertion": true,
     "no-redundant-jsdoc": true,
     "no-switch-case-fall-through": true,
     "no-use-before-declare": true,
     "no-var-requires": false,
+    "no-var-keyword": false,
+    "semicolon": [true, "always"],
+    "variable-name": [true, "ban-keywords", "check-format", "allow-leading-underscore"],
     "object-literal-key-quotes": [
       true,
       "as-needed"
     ],
     "object-literal-sort-keys": false,
     "ordered-imports": false,
+    "one-variable-per-declaration": true,
     "quotemark": [
-      true,
+      false,
       "single"
     ],
     "trailing-comma": false,
