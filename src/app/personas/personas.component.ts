@@ -16,6 +16,7 @@ export class PersonasComponent {
 
   agregarPersona = false;
   agregarPersonaStatus = "No se ha agregado ninguna persona";
+  tituloPersona = "";
 
   constructor() {
     setTimeout(
@@ -26,6 +27,12 @@ export class PersonasComponent {
 
   onCrearPersona() {
     this.agregarPersonaStatus = "Persona agregada";
+  }
+
+  onModificarPersona(event: Event) {
+    this.tituloPersona = (event.target as HTMLInputElement).value;
+    // Puede usarse tambien de esta manera
+    // this.tituloPersona = (<HTMLInputElement>event.target).value;
   }
 
 }
